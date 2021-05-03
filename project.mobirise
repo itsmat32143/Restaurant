@@ -1,0 +1,2163 @@
+{
+  "settings": {
+    "name": "Restaurant.NIWebDesigns.co.uk",
+    "currentPage": "page1.html",
+    "theme": {
+      "name": "dinerm4",
+      "title": "DinerM4",
+      "styling": {
+        "primaryColor": "#e7272d",
+        "secondaryColor": "#fbbe36",
+        "successColor": "#89b758",
+        "infoColor": "#29361a",
+        "warningColor": "#808080",
+        "dangerColor": "#B1A374",
+        "mainFont": "Roboto",
+        "display1Font": "Barlow",
+        "display1Size": 6,
+        "display2Font": "Barlow",
+        "display2Size": 3.8,
+        "display5Font": "Permanent Marker",
+        "display5Size": 1.6,
+        "display7Font": "Barlow",
+        "display7Size": 1.6,
+        "display4Font": "Roboto",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.3.5",
+    "siteFonts": [
+      {
+        "css": "'Permanent Marker', handwriting",
+        "name": "Permanent Marker",
+        "url": "https://fonts.googleapis.com/css?family=Permanent+Marker:400"
+      }
+    ],
+    "imageResize": true,
+    "uniqCompNum": 20,
+    "versionPublish": "5.3.5",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            ".dropdown-item:before": {
+              "font-family": "MobiriseIcons !important",
+              "content": "'\\e966'",
+              "display": "inline-block",
+              "width": "0",
+              "position": "absolute",
+              "left": "1rem",
+              "top": "0.5rem",
+              "margin-right": "0.5rem",
+              "line-height": "1",
+              "font-size": "inherit",
+              "vertical-align": "middle",
+              "text-align": "center",
+              "overflow": "hidden",
+              "-webkit-transform": "scale(0, 1)",
+              "transform": "scale(0, 1)",
+              "-webkit-transition": "all 0.25s ease-in-out",
+              "-moz-transition": "all 0.25s ease-in-out",
+              "transition": "all 0.25s ease-in-out"
+            },
+            ".dropdown-item:not(:last-child)": {
+              "border-bottom": "1px solid lightgray"
+            },
+            ".dropdown-menu": {
+              "padding": "0",
+              "background": "@ddbg !important"
+            },
+            ".dropdown-item": {
+              "color": "@dditem !important",
+              "&:hover": {
+                "color": "@dditem !important"
+              }
+            },
+            ".nav-link": {
+              "&:hover": {
+                "color": "@secondaryColor !important"
+              },
+              "position": "relative",
+              "font-weight": "600"
+            },
+            ".btn-white": {
+              "color": "@primaryColor !important"
+            },
+            ".btn": {
+              "&:hover": {
+                "border-color": "@secondaryColor !important",
+                "color": "@secondaryColor !important"
+              }
+            },
+            ".nav-dropdown .link": {
+              "padding": "0 0.3em !important",
+              "margin": "0.667em 1em !important"
+            },
+            ".nav-dropdown .link.dropdown-toggle::after": {
+              "margin-left": "0.5rem",
+              "margin-top": "0.2rem"
+            },
+            ".container": {
+              "display": "flex",
+              "margin": "auto"
+            },
+            ".navbar.navbar-short": {
+              ".nav-link, .navbar-caption, .mbr-iconfont": {
+                "color": "@scrollcolor !important",
+                "border-color": "@scrollcolor"
+              },
+              ".hamburger span": {
+                "background": "@scrollcolor !important"
+              }
+            },
+            ".navbar-caption": {
+              "padding-right": "3rem"
+            },
+            ".navbar.opened": {
+              "background": "@menuBgColor !important"
+            },
+            ".nav-item:focus, .nav-link:focus": {
+              "outline": "none"
+            },
+            ".dropdown .dropdown-menu .dropdown-item": {
+              "width": "auto",
+              "-webkit-transition": "all 0.25s ease-in-out",
+              "-moz-transition": "all 0.25s ease-in-out",
+              "transition": "all 0.25s ease-in-out",
+              "&::after": {
+                "right": "0.5rem"
+              },
+              ".mbr-iconfont": {
+                "margin-left": "-1.8rem",
+                "padding-right": "1rem",
+                "font-size": "inherit",
+                "&:before": {
+                  "display": "inline-block",
+                  "-webkit-transform": "scale(1, 1)",
+                  "transform": "scale(1, 1)",
+                  "-webkit-transition": "all 0.25s ease-in-out",
+                  "-moz-transition": "all 0.25s ease-in-out",
+                  "transition": "all 0.25s ease-in-out"
+                }
+              }
+            },
+            ".collapsed": {
+              ".dropdown-menu .dropdown-item:before": {
+                "display": "none"
+              },
+              ".dropdown .dropdown-menu .dropdown-item": {
+                "padding": "0.5em 1.5em 0.5em 1.5em !important",
+                "transition": "none",
+                "margin": "0 !important"
+              }
+            },
+            ".navbar": {
+              "min-height": "77px",
+              "transition": "all 0.3s",
+              "background": "@menuBgColor",
+              "& when (@transparent)": {
+                "background": "none"
+              },
+              "&.opened": {
+                "transition": "all 0.3s"
+              },
+              ".dropdown-item": {
+                "padding": "0.5rem 1.5rem"
+              },
+              ".navbar-collapse": {
+                "justify-content": "flex-end",
+                "z-index": "1",
+                "& when not (@showItems)": {
+                  "display": "none !important"
+                }
+              },
+              "&.collapsed": {
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  },
+                  "@media (min-width: 992px)": {
+                    "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
+                      "max-height": "~'calc(98.5vh - @{logoSize}rem)'"
+                    }
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle='dropdown-submenu']:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "55%"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0.25rem 1.5rem",
+                  "text-align": "center"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-top": "0.5rem",
+                  "padding-bottom": "0.5rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle='dropdown-submenu']:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "55%"
+                  }
+                },
+                ".navbar-logo": {
+                  "img": {
+                    "height": "3.8rem !important"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0.25rem 1.5rem !important",
+                  "text-align": "center"
+                },
+                ".navbar-brand": {
+                  "-webkit-flex-shrink": "initial",
+                  "flex-shrink": "initial",
+                  "-webkit-flex-basis": "auto",
+                  "flex-basis": "auto",
+                  "word-break": "break-word",
+                  "padding-right": "2rem"
+                },
+                ".navbar-toggler": {
+                  "-webkit-flex-basis": "auto",
+                  "flex-basis": "auto"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-top": "0.5rem",
+                  "padding-bottom": "0.5rem"
+                }
+              },
+              "&.navbar-short": {
+                "background": "@menuBgColor !important",
+                "min-height": "60px",
+                ".navbar-logo": {
+                  "img": {
+                    "height": "3rem !important"
+                  }
+                },
+                ".navbar-brand": {
+                  "padding": "0"
+                }
+              }
+            },
+            ".navbar-brand": {
+              "-webkit-flex-shrink": "0",
+              "flex-shrink": "0",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "margin-right": "0",
+              "padding": "0",
+              "transition": "all 0.3s",
+              "word-break": "break-word",
+              "z-index": "1",
+              ".navbar-caption": {
+                "line-height": "inherit !important"
+              },
+              ".navbar-logo a": {
+                "outline": "none"
+              }
+            },
+            ".dropdown-item.active, .dropdown-item:active": {
+              "background-color": "transparent"
+            },
+            ".navbar-expand-lg .navbar-nav .nav-link": {
+              "padding": "0"
+            },
+            ".nav-dropdown .link.dropdown-toggle": {
+              "margin-right": "1.667em",
+              "&[aria-expanded='true']": {
+                "margin-right": "0",
+                "padding": "0.667em 1.667em"
+              }
+            },
+            ".navbar.navbar-expand-lg .dropdown": {
+              ".dropdown-menu": {
+                "background": "@menuBgColor",
+                ".dropdown-submenu": {
+                  "margin": "0",
+                  "left": "100%"
+                }
+              }
+            },
+            ".navbar .dropdown.open > .dropdown-menu": {
+              "display": "block"
+            },
+            "ul.navbar-nav": {
+              "-webkit-flex-wrap": "wrap",
+              "flex-wrap": "wrap"
+            },
+            ".navbar-buttons": {
+              "text-align": "center"
+            },
+            "button.navbar-toggler": {
+              "outline": "none",
+              "width": "31px",
+              "height": "20px",
+              "cursor": "pointer",
+              "transition": "all 0.2s",
+              "position": "relative",
+              "-webkit-align-self": "center",
+              "align-self": "center",
+              ".hamburger span": {
+                "position": "absolute",
+                "right": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all 0.2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all 0.2s"
+                }
+              }
+            },
+            "nav.opened .hamburger span": {
+              "&:nth-child(1)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              },
+              "&:nth-child(2)": {
+                "-webkit-transform": "rotate(45deg)",
+                "transform": "rotate(45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(3)": {
+                "-webkit-transform": "rotate(-45deg)",
+                "transform": "rotate(-45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(4)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              }
+            },
+            ".navbar-dropdown": {
+              "padding": "0.5rem 1rem",
+              "& when (@sticky)": {
+                "position": "fixed"
+              }
+            },
+            "a.nav-link": {
+              "display": "flex",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
+            },
+            ".mbr-iconfont": {
+              "font-size": "1.5rem",
+              "padding-right": "0.5rem"
+            },
+            ".icons-menu": {
+              "-webkit-flex-wrap": "wrap",
+              "flex-wrap": "wrap",
+              "display": "flex",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "padding-left": "1rem",
+              "padding-right": "1rem",
+              "padding-top": "0.3rem",
+              "text-align": "center",
+              "span": {
+                "font-size": "20px",
+                "color": "#ffffff"
+              }
+            },
+            "@media screen and (~'-ms-high-contrast: active'), (~'-ms-high-contrast: none')": {
+              ".navbar": {
+                "height": "77px",
+                "&.opened": {
+                  "height": "auto"
+                }
+              },
+              ".nav-item .nav-link:hover::before": {
+                "width": "175%",
+                "max-width": "calc(100% ~'+' 2rem)",
+                "left": "-1rem"
+              }
+            }
+          },
+          "_name": "menu1",
+          "_sourceTheme": "dinerm4",
+          "_customHTML": "<section class=\"menu menu1 dinerm4_menu1\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header condition=\"showLogo || showIcons\">Size</header>\n\t\t<input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n\t\t<select title=\"Icons\" name=\"iconsAmount\" condition=\"showIcons\">\n\t\t\t<option value=\"1\" selected>1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t\t<option value=\"4\">4</option>\n\t\t\t<option value=\"5\">5</option>\n\t\t\t<option value=\"6\">6</option>\n\t\t</select>\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n\t\t<input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\" checked>\n\t\t<input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n\t\t<input type=\"checkbox\" title=\"Icons\" name=\"showIcons\">\n\t\t<input type=\"checkbox\" title=\"Button(s)\" name=\"showButtons\" checked>\n\t\t<input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n\t\t<input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n\t\t<input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n\t\t<header>Color</header>\n\t\t<input type=\"color\" title=\"Scroll\" name=\"scrollcolor\" value=\"#ffffff\">\n\t\t<input type=\"color\" title=\"Drop Down BG\" name=\"ddbg\" value=\"#ffffff\">\n\t\t<input type=\"color\" title=\"Drop Items\" name=\"dditem\" value=\"#000000\">\n\t\t<input type=\"color\" title=\"Hamburger\" name=\"hamburgerColor\" value=\"#ffffff\">\n\t\t<input type=\"color\" title=\"Background\" name=\"menuBgColor\" value=\"#e7272d\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<nav class=\"navbar navbar-dropdown\" mbr-class=\"{'navbar-fixed-top':sticky,\n                     'navbar-expand-lg':!collapsed,\n\t\t\t\t\t 'collapsed':collapsed}\">\n\n\t\t<div class=\"container\">\n\t\t\t<div class=\"navbar-brand\">\n\t\t\t\t<span mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<a href=\"https://mobiri.se\">\n\t\t\t\t\t\t<img src=\"../_images/logo2.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\">\n\t\t\t\t\t</a>\n\t\t\t\t</span>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-5\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption mbr-light text-white\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t\tDinerM4</a></span>\n\t\t\t</div>\n\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t</button>\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-white\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t\t\tHOME</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item dropdown\">\n\t\t\t\t\t\t<a class=\"nav-link link dropdown-toggle text-white\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"true\" data-toggle=\"dropdown-submenu\">\n\t\t\t\t\t\t\tMENU</a>\n\t\t\t\t\t\t<div class=\"dropdown-menu\">\n\t\t\t\t\t\t\t<a class=\"dropdown-item text-white\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Sushi</a><a class=\"text-white dropdown-item\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Pizza</a><a class=\"text-white dropdown-item\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Thai Food</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-white\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">CONTACT US</a>\n\t\t\t\t\t</li></ul>\n\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-white\" href=\"https://www.just-eat.co.uk/\" data-app-placeholder=\"Type Text\"> ONLINE\n\t\t\t\t\t\tORDER</a></div>\n\t\t\t\t<div class=\"icons-menu\" mbr-if=\"showIcons\">\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont mobi-mbri-cart-full mobi-mbri\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont socicon-instagram socicon\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont socicon-vimeo socicon\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont mbri-info\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 4\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont mbri-info\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 5\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont mbri-info\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</nav>\n</section>",
+          "_cid": "swnF2aGViS",
+          "_anchor": "menu1-b",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(45deg, @bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "H2": {
+              "color": "#e7272d"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#808080"
+            },
+            "img": {
+              "max-width": "500px",
+              "margin": "auto"
+            },
+            ".btn span": {
+              "font-size": "2.4rem !important",
+              "margin-top": "0.6rem !important",
+              "margin-bottom": "0rem !important"
+            },
+            ".btn": {
+              "padding": "0.4rem 2.2rem",
+              "text-align": "left",
+              "line-height": "1.3"
+            }
+          },
+          "_name": "info02",
+          "_sourceTheme": "dinerm4",
+          "_customHTML": "<section class=\"info02 dinerm4_info02\" group=\"Info\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n\t\t</fieldset>\n\n\t\t<input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"bg.type == 'color'\">\n\t\t<input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#000000\" condition=\"gradientBg && bg.type == 'color'\">\n\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div class=\"container\">\n\t\t<div class=\"row jc-sb\">\n\t\t\t<div class=\"col-md-12 col-lg-7 md-pb my-auto\">\n\t\t\t\t<div class=\"media-content\">\n\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-semibold align-left mbr-light mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\tdownload app\n\t\t\t\t\t</h2>\n\t\t\t\t\t<h1 class=\"mbr-section-title pb-3 align-left mbr-exbold mbr-fonts-style\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\">\n\t\t\t\t\t\tDownload the app. Click order and enjoy.\n\t\t\t\t\t</h1>\n\n\t\t\t\t\t<p class=\"mbr-text align-left pb-3 mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\tThe Domino’s app is the quickest and easiest way to get your Domino’s order — always freshly prepared and made using fresh ingredients.<br>\n\t\t\t\t\t</p>\n\t\t\t\t\t<div class=\"mbr-section-btn align-left\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-black\" href=\"https://play.google.com/store/apps/details?id=uk.co.dominos.android\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-play mbr-iconfont mbr-iconfont-btn\"></span>Get it on<br>Google\n\t\t\t\t\t\t\tPlay<br></a>\n\t\t\t\t\t\t<a class=\"btn btn-md btn-black\" href=\"https://apps.apple.com/gb/app/dominos-pizza/id426415753\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-apple mbr-iconfont mbr-iconfont-btn\"></span>Get it on<br>App\n\t\t\t\t\t\t\tStore<br></a></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"col-md-12 col-lg-5 my-auto\">\n\t\t\t\t<div class=\"mbr-figure\">\n\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/04.png\" alt>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "swnEc2aeV5",
+          "_anchor": "info02-4",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page1.html": {
+      "settings": {
+        "title": "Menu",
+        "order": 2
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-subtitle": {
+              "margin": "0"
+            },
+            ".card1": {
+              "background": "@cardBg1"
+            },
+            ".card2": {
+              "background": "@cardBg2"
+            },
+            ".card3": {
+              "background": "@cardBg3"
+            },
+            ".item": {
+              "margin-bottom": "2rem"
+            },
+            ".item-wrapper": {
+              "box-shadow": "0 5px 35px 0 rgba(0, 0, 0, 0.03)",
+              "padding": "1.5rem",
+              "border-radius": "9px",
+              "cursor": "pointer",
+              "display": "flex",
+              "transition": "all 0.6s",
+              "overflow": "hidden",
+              "position": "relative",
+              "&:before": {
+                "content": "''",
+                "width": "100%",
+                "height": "100%",
+                "position": "absolute",
+                "left": "50%",
+                "top": "50%",
+                "transform": "translate(-50%, -50%)",
+                "background": "lightgray",
+                "transition": "all 0.6s",
+                "opacity": "0",
+                "z-index": "9"
+              },
+              "&:after": {
+                "content": "''",
+                "width": "100%",
+                "height": "100%",
+                "position": "absolute",
+                "left": "50%",
+                "top": "50%",
+                "transform": "translate(-50%, -50%)",
+                "background": "lightgray",
+                "transition": "all 0.6s",
+                "opacity": "0",
+                "z-index": "9"
+              },
+              "&:hover": {
+                "&:before": {
+                  "opacity": "0.3",
+                  "width": "0"
+                },
+                "&:after": {
+                  "opacity": "0.3",
+                  "height": "0"
+                }
+              },
+              "img": {
+                "width": "130px",
+                "transition": "all 0.6s",
+                "border-radius": "9px"
+              },
+              ".card-box": {
+                "padding": "1rem"
+              },
+              ".link": {
+                "transition": "all 0.3s",
+                "text-decoration": "underline"
+              },
+              ".link-inline": {
+                "display": "inline-block",
+                "width": "fit-content"
+              },
+              ".mbr-section-btn": {
+                "span": {
+                  "order": "2",
+                  "padding": "0",
+                  "margin-left": "1rem"
+                },
+                ".btn": {
+                  "border": "0px",
+                  "&:hover": {
+                    "background": "inherit !important",
+                    "color": "inherit !important"
+                  }
+                }
+              },
+              "h4, h6, h5": {
+                "margin": "0"
+              },
+              ".link-wrap": {
+                "display": "flex",
+                "width": "fit-content",
+                "align-items": "center",
+                "span": {
+                  "margin-left": "0.6rem",
+                  "transition": "all 0.3s"
+                },
+                "&:hover": {
+                  "span": {
+                    "transform": "translateX(5px)"
+                  }
+                }
+              },
+              ".card": {
+                "cursor": "pointer",
+                "height": "fit-content",
+                ".item-wrapper": {
+                  "box-shadow": "0 5px 35px 0 rgba(0, 0, 0, 0.1)"
+                }
+              }
+            },
+            ".card-img": {
+              "justify-content": "center",
+              "align-items": "center",
+              "display": "flex"
+            },
+            ".row": {
+              "justify-content": "center"
+            },
+            ".location, .icon-wrap": {
+              "color": "#e7272d"
+            },
+            ".link, .link-wrap, .link-align": {
+              "color": "#ffffff"
+            },
+            "@media (max-width: 992px)": {
+              ".wrapper": {
+                "flex-direction": "column"
+              },
+              ".icon-padding": {
+                "padding-left": "0rem"
+              },
+              ".card-box": {
+                "padding": "0"
+              }
+            },
+            "H2": {
+              "color": "#e7272d"
+            },
+            "@media (max-width: 767px)": {
+              ".item-wrapper": {
+                "flex-direction": "column"
+              }
+            }
+          },
+          "_name": "features07",
+          "_sourceTheme": "dinerm4",
+          "_customHTML": "<section class=\"features07 dinerm4_features07\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n\t\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Main Subtitle\" name=\"showSubTitle\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Main Title\" name=\"showmainTitle\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Tag\" name=\"showTitle\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showText\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Link\" name=\"showLink\" checked=\"\">\n\t\t<header>Color</header>\n\t\t<input type=\"color\" title=\"Card 1\" name=\"cardBg1\" value=\"#e7272d\" selected=\"\">\n\t\t<input type=\"color\" title=\"Card 2\" name=\"cardBg2\" value=\"#232323\" selected=\"\">\n\t\t<input type=\"color\" title=\"Card 3\" name=\"cardBg3\" value=\"#fe7a15\" selected=\"\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax=\"\">\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax=\"\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected=\"\">\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-md-12 pb-5 col-lg-12 align-center\">\n\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-exbold mbr-light mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-5\">DEALS</h2>\n\t\t\t\t<h1 class=\"mbr-section-title pb-3 mbr-exbold mbr-fonts-style\" mbr-if=\"showmainTitle\" mbr-theme-style=\"display-2\">\n\t\t\t\t\tChoose your dishes\n\t\t\t\t</h1>\n\t\t\t</div>\n\n\t\t\t<div class=\"card item features-image col-12 col-md-10 col-lg-4\">\n\t\t\t\t<div class=\"item-wrapper card1\">\n\t\t\t\t\t<div class=\"card-box align-left mbr-white pt-4\">\n\t\t\t\t\t\t<h4 class=\"card-title pb-2 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">\n\t\t\t\t\t\t\tThai food\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-bold pb-2 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .link\">\n\t\t\t\t\t\t\tVegan Set\n\t\t\t\t\t\t</p>\n\n\t\t\t\t\t\t<div class=\"link-align\" mbr-if=\"showLink\">\n\t\t\t\t\t\t\t<div class=\"link-inline\">\n\t\t\t\t\t\t\t\t<div class=\"link-wrap\">\n\t\t\t\t\t\t\t\t\t<h5 mbr-text=\"\" class=\"link mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".link, .link-wrap, .link-align\">\n\t\t\t\t\t\t\t\t\t\tORDER NOW\n\t\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t\t<span mbr-icon=\"\" class=\"mbr-iconfont mbr-bold mobi-mbri-right mobi-mbri\"></span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"card-img my-auto\">\n\t\t\t\t\t\t<img src=\"../_images/img/03.png\" alt=\"Mobirise\">\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"card item features-image col-12 col-md-10 col-lg-4\">\n\t\t\t\t<div class=\"item-wrapper card2\">\n\t\t\t\t\t<div class=\"card-box align-left mbr-white pt-4\">\n\t\t\t\t\t\t<h4 class=\"card-title pb-2 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">\n\t\t\t\t\t\t\tPIZZA\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-bold pb-2 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .link\">\n\t\t\t\t\t\t\tMozzarella\n\t\t\t\t\t\t</p>\n\n\t\t\t\t\t\t<div class=\"link-align\" mbr-if=\"showLink\">\n\t\t\t\t\t\t\t<div class=\"link-inline\">\n\t\t\t\t\t\t\t\t<div class=\"link-wrap\">\n\t\t\t\t\t\t\t\t\t<h5 mbr-text=\"\" class=\"link mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".link, .link-wrap, .link-align\">\n\t\t\t\t\t\t\t\t\t\tORDER NOW\n\t\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t\t<span mbr-icon=\"\" class=\"mbr-iconfont mbr-bold mobi-mbri-right mobi-mbri\"></span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"card-img my-auto\">\n\t\t\t\t\t\t<img src=\"../_images/img/05.png\" alt=\"Mobirise\">\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"card item features-image col-12 col-md-10 col-lg-4\">\n\t\t\t\t<div class=\"item-wrapper card3\">\n\t\t\t\t\t<div class=\"card-box align-left mbr-white pt-4\">\n\t\t\t\t\t\t<h4 class=\"card-title pb-2 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">\n\t\t\t\t\t\t\tBurger\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-bold pb-2 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .link\">\n\t\t\t\t\t\t\tBeef Steak\n\t\t\t\t\t\t</p>\n\n\t\t\t\t\t\t<div class=\"link-align\" mbr-if=\"showLink\">\n\t\t\t\t\t\t\t<div class=\"link-inline\">\n\t\t\t\t\t\t\t\t<div class=\"link-wrap\">\n\t\t\t\t\t\t\t\t\t<h5 mbr-text=\"\" class=\"link mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".link, .link-wrap, .link-align\">\n\t\t\t\t\t\t\t\t\t\tORDER NOW\n\t\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t\t<span mbr-icon=\"\" class=\"mbr-iconfont mbr-bold mobi-mbri-right mobi-mbri\"></span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"card-img my-auto\">\n\t\t\t\t\t\t<img src=\"../_images/img/01.png\" alt=\"Mobirise\">\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "swnKIkyY5O",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features07-i"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-subtitle": {
+              "margin": "0"
+            },
+            ".btn": {
+              "padding": "0.6rem 1.8rem",
+              "box-shadow": "0 10px 20px 0 rgba(0, 0, 0, 0.05)",
+              "border": "1px solid @cardBorder !important"
+            },
+            ".item-wrapper": {
+              "background": "@cardBg",
+              "padding": "1rem",
+              "border-radius": "9px",
+              "transition": "all 0.3s",
+              "border": "1px solid @cardBorder",
+              "cursor": "pointer",
+              "overflow": "visible"
+            },
+            "h4, h6, h5": {
+              "margin": "0"
+            },
+            ".mbr-text": {
+              "transition": "all 0.3s"
+            },
+            ".btn-white-outline": {
+              "color": "@primaryColor !important"
+            },
+            ".price": {
+              "color": "#e7272d",
+              "transition": "all 0.3s"
+            },
+            "img": {
+              "transition": "all 0.3s",
+              "width": "170px",
+              "height": "170px",
+              "object-fit": "cover",
+              "margin-left": "auto",
+              "margin-right": "auto"
+            },
+            ".card": {
+              "cursor": "pointer",
+              "transition": "all 0.3s",
+              "margin-bottom": "2rem",
+              "&:hover": {
+                "transform": "translateY(-2rem)",
+                ".item-wrapper": {
+                  "box-shadow": "0 5px 35px 0 rgba(0, 0, 0, 0.1)",
+                  "background": "@cardHoverBg",
+                  "color": "@cardHoverText !important",
+                  ".price": {
+                    "color": "@cardHoverText !important"
+                  },
+                  ".mbr-text": {
+                    "color": "@cardHoverText !important"
+                  }
+                },
+                ".card-img": {
+                  "transform": "translateY(2rem) scale(1.2)"
+                },
+                ".btn": {
+                  "background": "@btnHoverBg !important",
+                  "color": "black !important",
+                  "border-color": "@btnHoverBg !important"
+                }
+              }
+            },
+            ".card-img": {
+              "width": "100%",
+              "position": "relative",
+              "transition": "all 0.3s",
+              "padding-top": "2rem",
+              "img": {
+                "max-width": "200px"
+              }
+            },
+            ".row": {
+              "justify-content": "center"
+            },
+            "@media (max-width: 992px)": {
+              ".wrapper": {
+                "flex-direction": "column"
+              },
+              ".icon-padding": {
+                "padding-left": "0rem"
+              },
+              ".card-box": {
+                "padding": "0"
+              }
+            },
+            ".mbr-text, .mbr-section-btn, .card-img": {
+              "color": "#808080"
+            },
+            "H2": {
+              "color": "#e7272d"
+            }
+          },
+          "_name": "pricing01",
+          "_sourceTheme": "dinerm4",
+          "_customHTML": "<section class=\"pricing01 dinerm4_pricing01\" group=\"Pricing\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n\t\t<select title=\"Cards\" name=\"cardsAmount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t\t<option value=\"4\" selected>4</option>\n\t\t</select>\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Main Subtitle\" name=\"showSubTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Main Title\" name=\"showmainTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Price\" name=\"showPrice\" checked>\n\t\t<input type=\"checkbox\" title=\"Button\" name=\"showButtons\">\n\t\t<header>Color</header>\n\t\t<input type=\"color\" title=\"Card\" name=\"cardBg\" value=\"#ffffff\" selected>\n\t\t<input type=\"color\" title=\"Card Border\" name=\"cardBorder\" value=\"#efefef\" selected>\n\t\t<input type=\"color\" title=\"Card Hover BG\" name=\"cardHoverBg\" value=\"#e7272d\" selected>\n\t\t<input type=\"color\" title=\"Card Hover Text\" name=\"cardHoverText\" value=\"#ffffff\" selected>\n\t\t<input type=\"color\" title=\"Button Hover\" name=\"btnHoverBg\" value=\"#fbbe36\" selected>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-md-12 pb-5 col-lg-12 align-center\">\n\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-exbold mbr-light mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-5\">\n\t\t\t\t\tSpecials Combo\n\t\t\t\t</h2>\n\t\t\t\t<h1 class=\"mbr-section-title pb-3 mbr-exbold mbr-fonts-style\" mbr-if=\"showmainTitle\" mbr-theme-style=\"display-2\">Our Best Sellers</h1>\n\t\t\t</div>\n\n\t\t\t<div class=\"card item features-image col-12 col-md-6 active\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n\t\t\t\t<div class=\"item-wrapper align-center\">\n\t\t\t\t\t<div class=\"card-box pt-4\">\n\t\t\t\t\t\t<h4 class=\"card-title pb-3 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">\n\t\t\t\t\t\t\tThai Combo\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-semibold mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn, .card-img\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing.\n\t\t\t\t\t\t</p>\n\n\t\t\t\t\t\t<h5 class=\"price pb-4 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showPrice\" data-app-selector=\".price\">\n\t\t\t\t\t\t\t12$\n\t\t\t\t\t\t</h5>\n\n\t\t\t\t\t\t<div class=\"mbr-section-btn\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t<a class=\"btn btn-md btn-white-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-cart-full mbr-iconfont mbr-iconfont-btn\"></span>ORDER\n\t\t\t\t\t\t\t\tNOW</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card-img\">\n\t\t\t\t\t\t\t<img src=\"../_images/img/03.png\" alt=\"Mobirise\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"card item features-image col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n\t\t\t\t<div class=\"item-wrapper align-center\">\n\t\t\t\t\t<div class=\"card-box pt-4\">\n\t\t\t\t\t\t<h4 class=\"card-title pb-3 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">\n\t\t\t\t\t\t\tMozzarella Pizza\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-semibold mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn, .card-img\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing.\n\t\t\t\t\t\t</p>\n\n\t\t\t\t\t\t<h5 class=\"price pb-4 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showPrice\" data-app-selector=\".price\">\n\t\t\t\t\t\t\t13$\n\t\t\t\t\t\t</h5>\n\n\t\t\t\t\t\t<div class=\"mbr-section-btn\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t<a class=\"btn btn-md btn-white-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-cart-full mbr-iconfont mbr-iconfont-btn\"></span>ORDER\n\t\t\t\t\t\t\t\tNOW</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card-img\">\n\t\t\t\t\t\t\t<img src=\"../_images/img/05.png\" alt=\"Mobirise\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"card item features-image col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n\t\t\t\t<div class=\"item-wrapper align-center\">\n\t\t\t\t\t<div class=\"card-box pt-4\">\n\t\t\t\t\t\t<h4 class=\"card-title pb-3 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">\n\t\t\t\t\t\t\tPepperoni Pizza\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-semibold mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn, .card-img\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing.\n\t\t\t\t\t\t</p>\n\n\t\t\t\t\t\t<h5 class=\"price pb-4 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showPrice\" data-app-selector=\".price\">\n\t\t\t\t\t\t\t11$\n\t\t\t\t\t\t</h5>\n\n\t\t\t\t\t\t<div class=\"mbr-section-btn\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t<a class=\"btn btn-md btn-white-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-cart-full mbr-iconfont mbr-iconfont-btn\"></span>ORDER\n\t\t\t\t\t\t\t\tNOW</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card-img\">\n\t\t\t\t\t\t\t<img src=\"../_images/img/05.png\" alt=\"Mobirise\" data-slide-to=\"2\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div><div class=\"card item features-image col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n\t\t\t\t<div class=\"item-wrapper align-center\">\n\t\t\t\t\t<div class=\"card-box pt-4\">\n\t\t\t\t\t\t<h4 class=\"card-title pb-3 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">\n\t\t\t\t\t\t\tSpicy Set\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-semibold mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn, .card-img\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing.\n\t\t\t\t\t\t</p>\n\n\t\t\t\t\t\t<h5 class=\"price pb-4 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showPrice\" data-app-selector=\".price\">\n\t\t\t\t\t\t\t15$\n\t\t\t\t\t\t</h5>\n\n\t\t\t\t\t\t<div class=\"mbr-section-btn\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t<a class=\"btn btn-md btn-white-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-cart-full mbr-iconfont mbr-iconfont-btn\"></span>ORDER\n\t\t\t\t\t\t\t\tNOW</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card-img\">\n\t\t\t\t\t\t\t<img src=\"../_images/img/03.png\" alt=\"Mobirise\" data-slide-to=\"3\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "swnEuIjjJB",
+          "_anchor": "pricing01-8",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".menu-item": {
+              "padding": "0",
+              "display": "flex",
+              "margin-bottom": "1.5rem"
+            },
+            ".item-tag": {
+              "background": "@iconColor",
+              "width": "fit-content",
+              "padding": "3px 16px 0px 16px",
+              "border-radius": "10px",
+              "margin-bottom": "12px"
+            },
+            ".mbr-iconfont": {
+              "font-size": "2.5rem",
+              "padding-right": "1rem",
+              "color": "@iconColor"
+            },
+            ".mbr-figure": {
+              "width": "150px",
+              "height": "100%",
+              "img": {
+                "border-radius": "6px",
+                "object-fit": "cover",
+                "margin-right": "2rem",
+                "width": "110px",
+                "height": "110px"
+              }
+            },
+            ".inline-wrap": {
+              "width": "fit-content",
+              "display": "inline-block"
+            },
+            ".group-title": {
+              "margin": "0",
+              "color": "#181818",
+              "font-weight": "bold",
+              "text-align": "left"
+            },
+            "@media (max-width: 991px)": {
+              ".mbr-figure": {
+                "width": "fit-content !important"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-figure": {
+                "width": "100% !important"
+              },
+              ".menu-item": {
+                "flex-direction": "column"
+              },
+              "img": {
+                "margin": "auto !important",
+                "margin-bottom": "0.5rem !important"
+              },
+              ".item-tag": {
+                "margin": "auto",
+                "margin-bottom": "1rem"
+              }
+            },
+            ".icon-wrap": {
+              "display": "flex",
+              "margin-bottom": "1.5rem",
+              "align-items": "center",
+              "width": "fit-content"
+            },
+            ".special-label": {
+              "color": "#fff"
+            },
+            ".menu-box": {
+              "display": "flex",
+              "align-items": "baseline",
+              "margin-bottom": "0.5rem",
+              "-webkit-justify-content": "space-between",
+              "justify-content": "space-between",
+              ".box-price": {
+                "-webkit-flex-shrink": "0",
+                "flex-shrink": "0"
+              }
+            },
+            ".menu-row": {
+              "margin": "0"
+            },
+            ".box-text": {
+              "padding": "0",
+              "margin": "0",
+              "width": "fit-content",
+              "color": "#000000"
+            },
+            ".line": {
+              "display": "flex",
+              "flex": "1 1 auto",
+              "background-image": "radial-gradient(circle closest-side, #9a9a9a 99%, rgba(255, 255, 255, 0) 1%)",
+              "background-size": "12px 2px",
+              "background-position": "center",
+              "margin": "0.2em 0.5em",
+              "background-repeat": "repeat",
+              "height": "2px"
+            },
+            ".group-title, .align-wrap": {
+              "text-align": "left"
+            },
+            "SPAN": {
+              "color": "#e7272d"
+            },
+            ".item-title": {
+              "color": "#808080"
+            },
+            "H4": {
+              "color": "#e7272d"
+            }
+          },
+          "_name": "content04",
+          "_sourceTheme": "dinerm4",
+          "_customHTML": "<section class=\"content04 dinerm4_content04\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mbr-restaurant-special-menu\">\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n\t\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n\t\t<input type=\"range\" title=\"Group1 Items\" inline=\"\" name=\"group1Items\" min=\"1\" max=\"10\" value=\"4\" step=\"1\">\n\t\t<input type=\"range\" title=\"Group2 Items\" inline=\"\" name=\"group2Items\" min=\"1\" max=\"10\" value=\"4\" step=\"1\">\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showsubTitle\" checked=\"\">\n\t\t<input type=\"color\" title=\"Tags Color\" name=\"iconColor\" value=\"#e7272d\" selected=\"\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax=\"\">\n\t\t\t<input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n\t\t\t<input type=\"color\" value=\"#ffffff\" title=\"Color\" selected=\"\">\n\t\t\t<input type=\"video\" value=\"https://www.youtube.com/watch?v=pjiVuLVqWQg\" title=\"Video\">\n\t\t</fieldset>\n\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div class=\"container\">\n\t\t<h4 class=\"mbr-section-subtitle mbr-semibold align-center mbr-fonts-style\" mbr-if=\"showsubTitle\" mbr-theme-style=\"display-5\">Menu</h4>\n\t\t<h2 class=\"mbr-section-title align-center mbr-exbold mbr-fonts-style mbr-black\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title,.ornament\">\n\t\t\tChoose your dish\n\t\t</h2>\n\n\t\t<div class=\"row\" mbr-class=\"{'pt-5':showTitle||showUnderline}\">\n\t\t\t<div class=\"col-md-12 col-lg-6\">\n\t\t\t\t<div class=\"menu-group\">\n\t\t\t\t\t<div class=\"row menu-row\" mbr-list=\"\" mbr-list-grow=\"group1Items\" data-specials=\"{{specialsInGroup1}}\">\n\t\t\t\t\t\t<div class=\"col-md-12 menu-item\">\n\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t<h5 class=\"item-tag mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-tag\">\n\t\t\t\t\t\t\t\t\tSUSHI\n\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t<div class=\"menu-box\">\n\t\t\t\t\t\t\t\t\t<p class=\"box-text mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".box-text\">\n\t\t\t\t\t\t\t\t\t\tSalmon Roll\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t<div class=\"line\"></div>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"mbr-fonts-style mbr-bold box-price mbr-black\" mbr-theme-style=\"display-7\"> $18</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<h3 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus\n\t\t\t\t\t\t\t\t\tporta euismod a libero.\n\t\t\t\t\t\t\t\t</h3>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div class=\"col-md-12 menu-item\">\n\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t<h5 class=\"item-tag mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-tag\">\n\t\t\t\t\t\t\t\t\tTHAI FOOD\n\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t<div class=\"menu-box\">\n\t\t\t\t\t\t\t\t\t<p class=\"box-text mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".box-text\">\n\t\t\t\t\t\t\t\t\t\tSpicy Fish Set<br>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t<div class=\"line\"></div>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"mbr-fonts-style mbr-bold box-price mbr-black\" mbr-theme-style=\"display-7\"> $28</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<h3 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus\n\t\t\t\t\t\t\t\t\tporta euismod a libero.\n\t\t\t\t\t\t\t\t</h3>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-md-12 menu-item\">\n\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t<h5 class=\"item-tag mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-tag\">\n\t\t\t\t\t\t\t\t\tPIZZA\n\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t<div class=\"menu-box\">\n\t\t\t\t\t\t\t\t\t<p class=\"box-text mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".box-text\">\n\t\t\t\t\t\t\t\t\t\tMozzarella Pizza\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t<div class=\"line\"></div>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"mbr-fonts-style mbr-bold box-price mbr-black\" mbr-theme-style=\"display-7\"> $14</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<h3 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus\n\t\t\t\t\t\t\t\t\tporta euismod a libero.\n\t\t\t\t\t\t\t\t</h3>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-md-12 menu-item\">\n\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t<h5 class=\"item-tag mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-tag\">\n\t\t\t\t\t\t\t\t\tSUSHI\n\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t<div class=\"menu-box\">\n\t\t\t\t\t\t\t\t\t<p class=\"box-text mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".box-text\">\n\t\t\t\t\t\t\t\t\t\tSalmon Roll<br>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t<div class=\"line\"></div>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"mbr-fonts-style mbr-bold box-price mbr-black\" mbr-theme-style=\"display-7\"> $18</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<h3 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus\n\t\t\t\t\t\t\t\t\tporta euismod a libero.\n\t\t\t\t\t\t\t\t</h3>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"col-md-12 col-lg-6\">\n\t\t\t\t<div class=\"menu-group\">\n\t\t\t\t\t<div class=\"row menu-row\" mbr-list=\"\" mbr-list-grow=\"group2Items\" data-specials=\"{{specialsInGroup2}}\">\n\t\t\t\t\t\t<div class=\"col-md-12 menu-item\">\n\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t<h5 class=\"item-tag mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-tag\">\n\t\t\t\t\t\t\t\t\tTHAI FOOD\n\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t<div class=\"menu-box\">\n\t\t\t\t\t\t\t\t\t<p class=\"box-text mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".box-text\">\n\t\t\t\t\t\t\t\t\t\tSpicy Fish Set<br>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t<div class=\"line\"></div>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"mbr-fonts-style mbr-bold box-price mbr-black\" mbr-theme-style=\"display-7\"> $28</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<h3 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus\n\t\t\t\t\t\t\t\t\tporta euismod a libero.\n\t\t\t\t\t\t\t\t</h3>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div class=\"col-md-12 menu-item\">\n\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t<h5 class=\"item-tag mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-tag\">\n\t\t\t\t\t\t\t\t\tPIZZA\n\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t<div class=\"menu-box\">\n\t\t\t\t\t\t\t\t\t<p class=\"box-text mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".box-text\">\n\t\t\t\t\t\t\t\t\t\tMozzarella Pizza<br>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t<div class=\"line\"></div>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"mbr-fonts-style mbr-bold box-price mbr-black\" mbr-theme-style=\"display-7\"> $14</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<h3 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus\n\t\t\t\t\t\t\t\t\tporta euismod a libero.\n\t\t\t\t\t\t\t\t</h3>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-md-12 menu-item\">\n\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t<h5 class=\"item-tag mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-tag\">\n\t\t\t\t\t\t\t\t\tSUSHI\n\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t<div class=\"menu-box\">\n\t\t\t\t\t\t\t\t\t<p class=\"box-text mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".box-text\">\n\t\t\t\t\t\t\t\t\t\tSalmon Roll<br>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t<div class=\"line\"></div>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"mbr-fonts-style mbr-bold box-price mbr-black\" mbr-theme-style=\"display-7\"> $18</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<h3 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus\n\t\t\t\t\t\t\t\t\tporta euismod a libero.\n\t\t\t\t\t\t\t\t</h3>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-md-12 menu-item\">\n\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t<h5 class=\"item-tag mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-tag\">\n\t\t\t\t\t\t\t\t\tPIZZA\n\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t<div class=\"menu-box\">\n\t\t\t\t\t\t\t\t\t<p class=\"box-text mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".box-text\">\n\t\t\t\t\t\t\t\t\t\tMozzarella Pizza<br>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t<div class=\"line\"></div>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"mbr-fonts-style mbr-bold box-price mbr-black\" mbr-theme-style=\"display-7\"> $14</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<h3 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus\n\t\t\t\t\t\t\t\t\tporta euismod a libero.\n\t\t\t\t\t\t\t\t</h3>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "swnExQmKDL",
+          "_anchor": "content04-9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".menu-item": {
+              "padding": "0",
+              "display": "flex",
+              "margin-bottom": "1.5rem"
+            },
+            ".item-tag": {
+              "background": "@iconColor",
+              "width": "fit-content",
+              "padding": "3px 16px 0px 16px",
+              "border-radius": "10px",
+              "margin-bottom": "12px"
+            },
+            ".mbr-iconfont": {
+              "font-size": "2.5rem",
+              "padding-right": "1rem",
+              "color": "@iconColor"
+            },
+            ".mbr-figure": {
+              "width": "150px",
+              "height": "100%",
+              "img": {
+                "border-radius": "6px",
+                "object-fit": "cover",
+                "margin-right": "2rem",
+                "width": "110px",
+                "height": "110px"
+              }
+            },
+            ".inline-wrap": {
+              "width": "fit-content",
+              "display": "inline-block"
+            },
+            ".group-title": {
+              "margin": "0",
+              "color": "#181818",
+              "font-weight": "bold",
+              "text-align": "left"
+            },
+            "@media (max-width: 991px)": {
+              ".mbr-figure": {
+                "width": "fit-content !important"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-figure": {
+                "width": "100% !important"
+              },
+              ".menu-item": {
+                "flex-direction": "column"
+              },
+              "img": {
+                "margin": "auto !important",
+                "margin-bottom": "0.5rem !important"
+              },
+              ".item-tag": {
+                "margin": "auto",
+                "margin-bottom": "1rem"
+              }
+            },
+            ".icon-wrap": {
+              "display": "flex",
+              "margin-bottom": "1.5rem",
+              "align-items": "center",
+              "width": "fit-content"
+            },
+            ".special-label": {
+              "color": "#fff"
+            },
+            ".menu-box": {
+              "display": "flex",
+              "align-items": "baseline",
+              "margin-bottom": "0.5rem",
+              "-webkit-justify-content": "space-between",
+              "justify-content": "space-between",
+              ".box-price": {
+                "-webkit-flex-shrink": "0",
+                "flex-shrink": "0"
+              }
+            },
+            ".menu-row": {
+              "margin": "0"
+            },
+            ".box-text": {
+              "padding": "0",
+              "margin": "0",
+              "width": "fit-content",
+              "color": "#000000"
+            },
+            ".line": {
+              "display": "flex",
+              "flex": "1 1 auto",
+              "background-image": "radial-gradient(circle closest-side, #9a9a9a 99%, rgba(255, 255, 255, 0) 1%)",
+              "background-size": "12px 2px",
+              "background-position": "center",
+              "margin": "0.2em 0.5em",
+              "background-repeat": "repeat",
+              "height": "2px"
+            },
+            ".group-title, .align-wrap": {
+              "text-align": "left"
+            },
+            "SPAN": {
+              "color": "#89b758"
+            },
+            ".item-title": {
+              "color": "#808080"
+            },
+            "H4": {
+              "color": "#89b758"
+            }
+          },
+          "_name": "content03",
+          "_sourceTheme": "dinerm4",
+          "_customHTML": "<section class=\"content03 dinerm4_content03\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mbr-restaurant-special-menu\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" title=\"Group1 Items\" inline=\"\" name=\"group1Items\" min=\"1\" max=\"10\" value=\"4\" step=\"1\">\n        <input type=\"range\" title=\"Group2 Items\" inline=\"\" name=\"group2Items\" min=\"1\" max=\"10\" value=\"4\" step=\"1\">\n        <header>Show / Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showsubTitle\" checked=\"\">\n        <input type=\"color\" title=\"Tags Color\" name=\"iconColor\" value=\"#89b758\" selected=\"\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#ffffff\" title=\"Color\" selected=\"\">\n            <input type=\"video\" value=\"https://www.youtube.com/watch?v=pjiVuLVqWQg\" title=\"Video\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n    <div class=\"container\">\n        <h4 class=\"mbr-section-subtitle mbr-semibold align-center mbr-fonts-style\" mbr-if=\"showsubTitle\" mbr-theme-style=\"display-5\">Welcome</h4>\n        <h2 class=\"mbr-section-title align-center mbr-exbold mbr-fonts-style mbr-black\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title,.ornament\">\n            Our Menu\n        </h2>\n\n        <div class=\"row\" mbr-class=\"{'pt-5':showTitle||showUnderline}\">\n            <div class=\"col-md-12 col-lg-6\">\n                <div class=\"menu-group\">\n                    <div class=\"row menu-row\" mbr-list=\"\" mbr-list-grow=\"group1Items\" data-specials=\"{{specialsInGroup1}}\">\n                        <div class=\"col-md-12 menu-item\">\n                            <div class=\"mbr-figure\">\n                                <img src=\"../_images/img/04.jpg\" alt=\"Mobirise\">\n                            </div>\n                            <div class=\"wrapper\">\n                                <h5 class=\"item-tag mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-tag\">\n                                    SUSHI\n                                </h5>\n                                <div class=\"menu-box\">\n                                    <p class=\"box-text mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".box-text\">\n                                        Salmon Roll\n                                    </p>\n                                    <div class=\"line\"></div>\n                                    <span mbr-text=\"\" class=\"mbr-fonts-style mbr-bold box-price mbr-black\" mbr-theme-style=\"display-7\"> $18</span>\n                                </div>\n                                <h3 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\">\n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus\n                                    porta euismod a libero.\n                                </h3>\n                            </div>\n                        </div>\n                        <div class=\"col-md-12 menu-item\">\n                            <div class=\"mbr-figure\">\n                                <img src=\"../_images/img/03.jpg\" alt=\"Mobirise\">\n                            </div>\n                            <div class=\"wrapper\">\n                                <h5 class=\"item-tag mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-tag\">\n                                    THAI FOOD\n                                </h5>\n                                <div class=\"menu-box\">\n                                    <p class=\"box-text mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".box-text\">\n                                        Spicy Fish Set<br>\n                                    </p>\n                                    <div class=\"line\"></div>\n                                    <span mbr-text=\"\" class=\"mbr-fonts-style mbr-bold box-price mbr-black\" mbr-theme-style=\"display-7\"> $28</span>\n                                </div>\n                                <h3 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\">\n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus\n                                    porta euismod a libero.\n                                </h3>\n                            </div>\n                        </div>\n                        <div class=\"col-md-12 menu-item\">\n                            <div class=\"mbr-figure\">\n                                <img src=\"../_images/img/02.jpg\" alt=\"Mobirise\">\n                            </div>\n                            <div class=\"wrapper\">\n                                <h5 class=\"item-tag mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-tag\">\n                                    PIZZA\n                                </h5>\n                                <div class=\"menu-box\">\n                                    <p class=\"box-text mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".box-text\">\n                                        Mozzarella Pizza\n                                    </p>\n                                    <div class=\"line\"></div>\n                                    <span mbr-text=\"\" class=\"mbr-fonts-style mbr-bold box-price mbr-black\" mbr-theme-style=\"display-7\"> $14</span>\n                                </div>\n                                <h3 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\">\n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus\n                                    porta euismod a libero.\n                                </h3>\n                            </div>\n                        </div>\n                        <div class=\"col-md-12 menu-item\">\n                            <div class=\"mbr-figure\">\n                                <img src=\"../_images/img/04.jpg\" alt=\"Mobirise\">\n                            </div>\n                            <div class=\"wrapper\">\n                                <h5 class=\"item-tag mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-tag\">\n                                    SUSHI\n                                </h5>\n                                <div class=\"menu-box\">\n                                    <p class=\"box-text mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".box-text\">\n                                        Salmon Roll<br>\n                                    </p>\n                                    <div class=\"line\"></div>\n                                    <span mbr-text=\"\" class=\"mbr-fonts-style mbr-bold box-price mbr-black\" mbr-theme-style=\"display-7\"> $18</span>\n                                </div>\n                                <h3 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\">\n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus\n                                    porta euismod a libero.\n                                </h3>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"col-md-12 col-lg-6\">\n                <div class=\"menu-group\">\n                    <div class=\"row menu-row\" mbr-list=\"\" mbr-list-grow=\"group2Items\" data-specials=\"{{specialsInGroup2}}\">\n                        <div class=\"col-md-12 menu-item\">\n                            <div class=\"mbr-figure\">\n                                <img src=\"../_images/img/03.jpg\" alt=\"Mobirise\">\n                            </div>\n                            <div class=\"wrapper\">\n                                <h5 class=\"item-tag mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-tag\">\n                                    THAI FOOD\n                                </h5>\n                                <div class=\"menu-box\">\n                                    <p class=\"box-text mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".box-text\">\n                                        Spicy Fish Set<br>\n                                    </p>\n                                    <div class=\"line\"></div>\n                                    <span mbr-text=\"\" class=\"mbr-fonts-style mbr-bold box-price mbr-black\" mbr-theme-style=\"display-7\"> $28</span>\n                                </div>\n                                <h3 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\">\n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus\n                                    porta euismod a libero.\n                                </h3>\n                            </div>\n                        </div>\n\n                        <div class=\"col-md-12 menu-item\">\n                            <div class=\"mbr-figure\">\n                                <img src=\"../_images/img/02.jpg\" alt=\"Mobirise\">\n                            </div>\n                            <div class=\"wrapper\">\n                                <h5 class=\"item-tag mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-tag\">\n                                    PIZZA\n                                </h5>\n                                <div class=\"menu-box\">\n                                    <p class=\"box-text mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".box-text\">\n                                        Mozzarella Pizza<br>\n                                    </p>\n                                    <div class=\"line\"></div>\n                                    <span mbr-text=\"\" class=\"mbr-fonts-style mbr-bold box-price mbr-black\" mbr-theme-style=\"display-7\"> $14</span>\n                                </div>\n                                <h3 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\">\n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus\n                                    porta euismod a libero.\n                                </h3>\n                            </div>\n                        </div>\n                        <div class=\"col-md-12 menu-item\">\n                            <div class=\"mbr-figure\">\n                                <img src=\"../_images/img/04.jpg\" alt=\"Mobirise\">\n                            </div>\n                            <div class=\"wrapper\">\n                                <h5 class=\"item-tag mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-tag\">\n                                    SUSHI\n                                </h5>\n                                <div class=\"menu-box\">\n                                    <p class=\"box-text mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".box-text\">\n                                        Salmon Roll<br>\n                                    </p>\n                                    <div class=\"line\"></div>\n                                    <span mbr-text=\"\" class=\"mbr-fonts-style mbr-bold box-price mbr-black\" mbr-theme-style=\"display-7\"> $18</span>\n                                </div>\n                                <h3 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\">\n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus\n                                    porta euismod a libero.\n                                </h3>\n                            </div>\n                        </div>\n                        <div class=\"col-md-12 menu-item\">\n                            <div class=\"mbr-figure\">\n                                <img src=\"../_images/img/02.jpg\" alt=\"Mobirise\">\n                            </div>\n                            <div class=\"wrapper\">\n                                <h5 class=\"item-tag mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-tag\">\n                                    PIZZA\n                                </h5>\n                                <div class=\"menu-box\">\n                                    <p class=\"box-text mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".box-text\">\n                                        Mozzarella Pizza<br>\n                                    </p>\n                                    <div class=\"line\"></div>\n                                    <span mbr-text=\"\" class=\"mbr-fonts-style mbr-bold box-price mbr-black\" mbr-theme-style=\"display-7\"> $14</span>\n                                </div>\n                                <h3 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\">\n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus\n                                    porta euismod a libero.\n                                </h3>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "swnKNBnKRP",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content03-j"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            ".dropdown-item:before": {
+              "font-family": "MobiriseIcons !important",
+              "content": "'\\e966'",
+              "display": "inline-block",
+              "width": "0",
+              "position": "absolute",
+              "left": "1rem",
+              "top": "0.5rem",
+              "margin-right": "0.5rem",
+              "line-height": "1",
+              "font-size": "inherit",
+              "vertical-align": "middle",
+              "text-align": "center",
+              "overflow": "hidden",
+              "-webkit-transform": "scale(0, 1)",
+              "transform": "scale(0, 1)",
+              "-webkit-transition": "all 0.25s ease-in-out",
+              "-moz-transition": "all 0.25s ease-in-out",
+              "transition": "all 0.25s ease-in-out"
+            },
+            ".dropdown-item:not(:last-child)": {
+              "border-bottom": "1px solid lightgray"
+            },
+            ".dropdown-menu": {
+              "padding": "0",
+              "background": "@ddbg !important"
+            },
+            ".dropdown-item": {
+              "color": "@dditem !important",
+              "&:hover": {
+                "color": "@dditem !important"
+              }
+            },
+            ".nav-link": {
+              "&:hover": {
+                "color": "@secondaryColor !important"
+              },
+              "position": "relative",
+              "font-weight": "600"
+            },
+            ".btn-white": {
+              "color": "@primaryColor !important"
+            },
+            ".btn": {
+              "&:hover": {
+                "border-color": "@secondaryColor !important",
+                "color": "@secondaryColor !important"
+              }
+            },
+            ".nav-dropdown .link": {
+              "padding": "0 0.3em !important",
+              "margin": "0.667em 1em !important"
+            },
+            ".nav-dropdown .link.dropdown-toggle::after": {
+              "margin-left": "0.5rem",
+              "margin-top": "0.2rem"
+            },
+            ".container": {
+              "display": "flex",
+              "margin": "auto"
+            },
+            ".navbar.navbar-short": {
+              ".nav-link, .navbar-caption, .mbr-iconfont": {
+                "color": "@scrollcolor !important",
+                "border-color": "@scrollcolor"
+              },
+              ".hamburger span": {
+                "background": "@scrollcolor !important"
+              }
+            },
+            ".navbar-caption": {
+              "padding-right": "3rem"
+            },
+            ".navbar.opened": {
+              "background": "@menuBgColor !important"
+            },
+            ".nav-item:focus, .nav-link:focus": {
+              "outline": "none"
+            },
+            ".dropdown .dropdown-menu .dropdown-item": {
+              "width": "auto",
+              "-webkit-transition": "all 0.25s ease-in-out",
+              "-moz-transition": "all 0.25s ease-in-out",
+              "transition": "all 0.25s ease-in-out",
+              "&::after": {
+                "right": "0.5rem"
+              },
+              ".mbr-iconfont": {
+                "margin-left": "-1.8rem",
+                "padding-right": "1rem",
+                "font-size": "inherit",
+                "&:before": {
+                  "display": "inline-block",
+                  "-webkit-transform": "scale(1, 1)",
+                  "transform": "scale(1, 1)",
+                  "-webkit-transition": "all 0.25s ease-in-out",
+                  "-moz-transition": "all 0.25s ease-in-out",
+                  "transition": "all 0.25s ease-in-out"
+                }
+              }
+            },
+            ".collapsed": {
+              ".dropdown-menu .dropdown-item:before": {
+                "display": "none"
+              },
+              ".dropdown .dropdown-menu .dropdown-item": {
+                "padding": "0.5em 1.5em 0.5em 1.5em !important",
+                "transition": "none",
+                "margin": "0 !important"
+              }
+            },
+            ".navbar": {
+              "min-height": "77px",
+              "transition": "all 0.3s",
+              "background": "@menuBgColor",
+              "& when (@transparent)": {
+                "background": "none"
+              },
+              "&.opened": {
+                "transition": "all 0.3s"
+              },
+              ".dropdown-item": {
+                "padding": "0.5rem 1.5rem"
+              },
+              ".navbar-collapse": {
+                "justify-content": "flex-end",
+                "z-index": "1",
+                "& when not (@showItems)": {
+                  "display": "none !important"
+                }
+              },
+              "&.collapsed": {
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  },
+                  "@media (min-width: 992px)": {
+                    "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
+                      "max-height": "~'calc(98.5vh - @{logoSize}rem)'"
+                    }
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle='dropdown-submenu']:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "55%"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0.25rem 1.5rem",
+                  "text-align": "center"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-top": "0.5rem",
+                  "padding-bottom": "0.5rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle='dropdown-submenu']:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "55%"
+                  }
+                },
+                ".navbar-logo": {
+                  "img": {
+                    "height": "3.8rem !important"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0.25rem 1.5rem !important",
+                  "text-align": "center"
+                },
+                ".navbar-brand": {
+                  "-webkit-flex-shrink": "initial",
+                  "flex-shrink": "initial",
+                  "-webkit-flex-basis": "auto",
+                  "flex-basis": "auto",
+                  "word-break": "break-word",
+                  "padding-right": "2rem"
+                },
+                ".navbar-toggler": {
+                  "-webkit-flex-basis": "auto",
+                  "flex-basis": "auto"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-top": "0.5rem",
+                  "padding-bottom": "0.5rem"
+                }
+              },
+              "&.navbar-short": {
+                "background": "@menuBgColor !important",
+                "min-height": "60px",
+                ".navbar-logo": {
+                  "img": {
+                    "height": "3rem !important"
+                  }
+                },
+                ".navbar-brand": {
+                  "padding": "0"
+                }
+              }
+            },
+            ".navbar-brand": {
+              "-webkit-flex-shrink": "0",
+              "flex-shrink": "0",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "margin-right": "0",
+              "padding": "0",
+              "transition": "all 0.3s",
+              "word-break": "break-word",
+              "z-index": "1",
+              ".navbar-caption": {
+                "line-height": "inherit !important"
+              },
+              ".navbar-logo a": {
+                "outline": "none"
+              }
+            },
+            ".dropdown-item.active, .dropdown-item:active": {
+              "background-color": "transparent"
+            },
+            ".navbar-expand-lg .navbar-nav .nav-link": {
+              "padding": "0"
+            },
+            ".nav-dropdown .link.dropdown-toggle": {
+              "margin-right": "1.667em",
+              "&[aria-expanded='true']": {
+                "margin-right": "0",
+                "padding": "0.667em 1.667em"
+              }
+            },
+            ".navbar.navbar-expand-lg .dropdown": {
+              ".dropdown-menu": {
+                "background": "@menuBgColor",
+                ".dropdown-submenu": {
+                  "margin": "0",
+                  "left": "100%"
+                }
+              }
+            },
+            ".navbar .dropdown.open > .dropdown-menu": {
+              "display": "block"
+            },
+            "ul.navbar-nav": {
+              "-webkit-flex-wrap": "wrap",
+              "flex-wrap": "wrap"
+            },
+            ".navbar-buttons": {
+              "text-align": "center"
+            },
+            "button.navbar-toggler": {
+              "outline": "none",
+              "width": "31px",
+              "height": "20px",
+              "cursor": "pointer",
+              "transition": "all 0.2s",
+              "position": "relative",
+              "-webkit-align-self": "center",
+              "align-self": "center",
+              ".hamburger span": {
+                "position": "absolute",
+                "right": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all 0.2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all 0.2s"
+                }
+              }
+            },
+            "nav.opened .hamburger span": {
+              "&:nth-child(1)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              },
+              "&:nth-child(2)": {
+                "-webkit-transform": "rotate(45deg)",
+                "transform": "rotate(45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(3)": {
+                "-webkit-transform": "rotate(-45deg)",
+                "transform": "rotate(-45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(4)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              }
+            },
+            ".navbar-dropdown": {
+              "padding": "0.5rem 1rem",
+              "& when (@sticky)": {
+                "position": "fixed"
+              }
+            },
+            "a.nav-link": {
+              "display": "flex",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
+            },
+            ".mbr-iconfont": {
+              "font-size": "1.5rem",
+              "padding-right": "0.5rem"
+            },
+            ".icons-menu": {
+              "-webkit-flex-wrap": "wrap",
+              "flex-wrap": "wrap",
+              "display": "flex",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "padding-left": "1rem",
+              "padding-right": "1rem",
+              "padding-top": "0.3rem",
+              "text-align": "center",
+              "span": {
+                "font-size": "20px",
+                "color": "#ffffff"
+              }
+            },
+            "@media screen and (~'-ms-high-contrast: active'), (~'-ms-high-contrast: none')": {
+              ".navbar": {
+                "height": "77px",
+                "&.opened": {
+                  "height": "auto"
+                }
+              },
+              ".nav-item .nav-link:hover::before": {
+                "width": "175%",
+                "max-width": "calc(100% ~'+' 2rem)",
+                "left": "-1rem"
+              }
+            }
+          },
+          "_name": "menu1",
+          "_sourceTheme": "dinerm4",
+          "_customHTML": "<section class=\"menu menu1 dinerm4_menu1\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header condition=\"showLogo || showIcons\">Size</header>\n\t\t<input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n\t\t<select title=\"Icons\" name=\"iconsAmount\" condition=\"showIcons\">\n\t\t\t<option value=\"1\" selected>1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t\t<option value=\"4\">4</option>\n\t\t\t<option value=\"5\">5</option>\n\t\t\t<option value=\"6\">6</option>\n\t\t</select>\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n\t\t<input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\" checked>\n\t\t<input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n\t\t<input type=\"checkbox\" title=\"Icons\" name=\"showIcons\">\n\t\t<input type=\"checkbox\" title=\"Button(s)\" name=\"showButtons\" checked>\n\t\t<input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n\t\t<input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n\t\t<input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n\t\t<header>Color</header>\n\t\t<input type=\"color\" title=\"Scroll\" name=\"scrollcolor\" value=\"#ffffff\">\n\t\t<input type=\"color\" title=\"Drop Down BG\" name=\"ddbg\" value=\"#ffffff\">\n\t\t<input type=\"color\" title=\"Drop Items\" name=\"dditem\" value=\"#000000\">\n\t\t<input type=\"color\" title=\"Hamburger\" name=\"hamburgerColor\" value=\"#ffffff\">\n\t\t<input type=\"color\" title=\"Background\" name=\"menuBgColor\" value=\"#e7272d\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<nav class=\"navbar navbar-dropdown\" mbr-class=\"{'navbar-fixed-top':sticky,\n                     'navbar-expand-lg':!collapsed,\n\t\t\t\t\t 'collapsed':collapsed}\">\n\n\t\t<div class=\"container\">\n\t\t\t<div class=\"navbar-brand\">\n\t\t\t\t<span mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<a href=\"https://mobiri.se\">\n\t\t\t\t\t\t<img src=\"../_images/logo2.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\">\n\t\t\t\t\t</a>\n\t\t\t\t</span>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-5\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption mbr-light text-white\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t\tDinerM4</a></span>\n\t\t\t</div>\n\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t</button>\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-white\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t\t\tHOME</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item dropdown\">\n\t\t\t\t\t\t<a class=\"nav-link link dropdown-toggle text-white\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"true\" data-toggle=\"dropdown-submenu\">\n\t\t\t\t\t\t\tMENU</a>\n\t\t\t\t\t\t<div class=\"dropdown-menu\">\n\t\t\t\t\t\t\t<a class=\"dropdown-item text-white\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Sushi</a><a class=\"text-white dropdown-item\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Pizza</a><a class=\"text-white dropdown-item\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Thai Food</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-white\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">CONTACT US</a>\n\t\t\t\t\t</li></ul>\n\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-white\" href=\"https://www.just-eat.co.uk/\" data-app-placeholder=\"Type Text\"> ONLINE\n\t\t\t\t\t\tORDER</a></div>\n\t\t\t\t<div class=\"icons-menu\" mbr-if=\"showIcons\">\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont mobi-mbri-cart-full mobi-mbri\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont socicon-instagram socicon\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont socicon-vimeo socicon\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont mbri-info\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 4\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont mbri-info\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 5\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont mbri-info\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</nav>\n</section>",
+          "_cid": "swnF2aGViS",
+          "_anchor": "menu1-b",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        }
+      ]
+    },
+    "page2.html": {
+      "settings": {
+        "title": "Contact Us",
+        "order": 1
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(45deg, @bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card": {
+              "&:hover": {
+                ".item-content": {
+                  "box-shadow": "0 30px 100px 0 rgba(0, 0, 0, 0.13)"
+                }
+              }
+            },
+            ".logo": {
+              "max-width": "80px",
+              "width": "100%",
+              "margin": "auto",
+              "margin-bottom": "1rem"
+            },
+            ".center": {
+              "box-shadow": "0 30px 100px 0 rgba(0, 0, 0, 0.13)"
+            },
+            ".item-content": {
+              "height": "100%",
+              "z-index": "99",
+              "transition": "all 0.3s",
+              "padding": "3rem 2rem",
+              "justify-content": "center",
+              "display": "flex",
+              "flex-direction": "column"
+            },
+            ".border1": {
+              "border-bottom": "2px dotted lightgray"
+            },
+            ".wrapper": {
+              "display": "flex",
+              "justify-content": "space-between",
+              "padding": "16px 0px"
+            },
+            ".icon-wrap": {
+              "display": "flex",
+              "justify-content": "center",
+              "margin-bottom": "1rem",
+              "span": {
+                "margin-right": "14px",
+                "margin-top": "4px",
+                "font-size": "1.2rem",
+                "color": "@iconsColor"
+              }
+            },
+            ".bigicon": {
+              "color": "@iconsColor2",
+              "font-size": "3rem",
+              "margin-bottom": "1rem"
+            },
+            "@media (max-width: 767px)": {
+              ".item-content": {
+                "padding": "3rem 1rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#808080"
+            },
+            ".location, .icon-wrap": {
+              "color": "#e7272d"
+            },
+            "H3": {
+              "color": "#29361a"
+            }
+          },
+          "_name": "contacts01",
+          "_sourceTheme": "dinerm4",
+          "_customHTML": "<section class=\"contacts01 dinerm4_contacts01\" group=\"Contacts\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Col\" name=\"menuItems1\" min=\"1\" max=\"3\" step=\"1\" value=\"3\">\n        <header>Show / Hide</header>\n        <input type=\"checkbox\" title=\"Icon\" name=\"showLogo\" checked>\n        <input type=\"checkbox\" title=\"Title\" name=\"showcardTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Color</header>\n        <input type=\"color\" title=\"Phone Icon\" name=\"iconsColor\" value=\"#e7272d\" selected>\n        <input type=\"color\" title=\"Big Icon\" name=\"iconsColor2\" value=\"#e7272d\" selected condition=\"showLogo\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"bg.type == 'color'\">\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#000000\" condition=\"gradientBg && bg.type == 'color'\">\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n    <div class=\"container\">\n        <div class=\"row mbr-white justify-content-center\">\n            <div class=\"card col-md-8 align-center col-lg-4\" mbr-if=\"menuItems1 > 0\">\n                <div class=\"item-content\">\n                    <h3 class=\"mbr-section-title pb-2 mbr-bold mbr-fonts-style\" mbr-if=\"showcardTitle\" mbr-theme-style=\"display-7\">Contact Us</h3>\n\n                    <div class=\"icon-wrap icon-padding\">\n                        <span mbr-icon class=\"mbr-iconfont mobi-mbri-phone mobi-mbri\"></span>\n                        <h6 mbr-text class=\"location mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".location, .icon-wrap\"><a href=\"tel:02890703222\" class=\"text-primary\">028 9070 3222</a>\n                        </h6>\n                    </div>\n                    <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-4\">Email: info@site.com\n                    </p>\n                </div>\n            </div>\n            <div class=\"col-md-8 col-lg-4 md-pb align-center\" mbr-if=\"menuItems1 > 1\">\n                <div class=\"item-content center\">\n                    <a href=\"https://www.google.com/maps/dir//226,+Domino's+Pizza+-+Belfast+-+Saintfield+Road,+Knock+Road,+Belfast,+UK/@54.5781489,-5.9426816,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x48610968759ecb1f:0xb651d5c1976d0449!2m2!1d-5.8727438!2d54.5780945?hl=en-GB\"><span class=\"bigicon mbr-iconfont mobi-mbri-share mobi-mbri\" mbr-icon mbr-if=\"showLogo\"></span></a>\n                    <h3 class=\"mbr-section-title pb-2 mbr-bold mbr-fonts-style\" mbr-if=\"showcardTitle\" mbr-theme-style=\"display-7\"><a href=\"https://www.google.com/maps/dir//226,+Domino's+Pizza+-+Belfast+-+Saintfield+Road,+Knock+Road,+Belfast,+UK/@54.5781489,-5.9426816,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x48610968759ecb1f:0xb651d5c1976d0449!2m2!1d-5.8727438!2d54.5780945?hl=en-GB\" class=\"text-primary\">Get Direction</a></h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-4\"></p>\n                </div>\n            </div>\n            <div class=\"col-md-8 card md-pb col-lg-4 align-center\" mbr-if=\"menuItems1 > 2\">\n                <div class=\"item-content\">\n                    <h3 class=\"mbr-section-title pb-2 mbr-bold mbr-fonts-style\" mbr-if=\"showcardTitle\" mbr-theme-style=\"display-7\">Opening Hours</h3>\n\n                    <div class=\"wrapper border1\">\n                        <span mbr-text class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-4\">Delivery &amp; Collection:<br></span>\n                        <span mbr-text class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-4\">11:00 - 00:00<br></span>\n                    </div>\n\n                    <div class=\"wrapper\">\n                        <span mbr-text class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-4\">Delivery Only:<br></span>\n                        <span mbr-text class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-4\">00:00 - 03:00<br></span>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "swnGsxhIeU",
+          "_anchor": "contacts01-e",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            ".dropdown-item:before": {
+              "font-family": "MobiriseIcons !important",
+              "content": "'\\e966'",
+              "display": "inline-block",
+              "width": "0",
+              "position": "absolute",
+              "left": "1rem",
+              "top": "0.5rem",
+              "margin-right": "0.5rem",
+              "line-height": "1",
+              "font-size": "inherit",
+              "vertical-align": "middle",
+              "text-align": "center",
+              "overflow": "hidden",
+              "-webkit-transform": "scale(0, 1)",
+              "transform": "scale(0, 1)",
+              "-webkit-transition": "all 0.25s ease-in-out",
+              "-moz-transition": "all 0.25s ease-in-out",
+              "transition": "all 0.25s ease-in-out"
+            },
+            ".dropdown-item:not(:last-child)": {
+              "border-bottom": "1px solid lightgray"
+            },
+            ".dropdown-menu": {
+              "padding": "0",
+              "background": "@ddbg !important"
+            },
+            ".dropdown-item": {
+              "color": "@dditem !important",
+              "&:hover": {
+                "color": "@dditem !important"
+              }
+            },
+            ".nav-link": {
+              "&:hover": {
+                "color": "@secondaryColor !important"
+              },
+              "position": "relative",
+              "font-weight": "600"
+            },
+            ".btn-white": {
+              "color": "@primaryColor !important"
+            },
+            ".btn": {
+              "&:hover": {
+                "border-color": "@secondaryColor !important",
+                "color": "@secondaryColor !important"
+              }
+            },
+            ".nav-dropdown .link": {
+              "padding": "0 0.3em !important",
+              "margin": "0.667em 1em !important"
+            },
+            ".nav-dropdown .link.dropdown-toggle::after": {
+              "margin-left": "0.5rem",
+              "margin-top": "0.2rem"
+            },
+            ".container": {
+              "display": "flex",
+              "margin": "auto"
+            },
+            ".navbar.navbar-short": {
+              ".nav-link, .navbar-caption, .mbr-iconfont": {
+                "color": "@scrollcolor !important",
+                "border-color": "@scrollcolor"
+              },
+              ".hamburger span": {
+                "background": "@scrollcolor !important"
+              }
+            },
+            ".navbar-caption": {
+              "padding-right": "3rem"
+            },
+            ".navbar.opened": {
+              "background": "@menuBgColor !important"
+            },
+            ".nav-item:focus, .nav-link:focus": {
+              "outline": "none"
+            },
+            ".dropdown .dropdown-menu .dropdown-item": {
+              "width": "auto",
+              "-webkit-transition": "all 0.25s ease-in-out",
+              "-moz-transition": "all 0.25s ease-in-out",
+              "transition": "all 0.25s ease-in-out",
+              "&::after": {
+                "right": "0.5rem"
+              },
+              ".mbr-iconfont": {
+                "margin-left": "-1.8rem",
+                "padding-right": "1rem",
+                "font-size": "inherit",
+                "&:before": {
+                  "display": "inline-block",
+                  "-webkit-transform": "scale(1, 1)",
+                  "transform": "scale(1, 1)",
+                  "-webkit-transition": "all 0.25s ease-in-out",
+                  "-moz-transition": "all 0.25s ease-in-out",
+                  "transition": "all 0.25s ease-in-out"
+                }
+              }
+            },
+            ".collapsed": {
+              ".dropdown-menu .dropdown-item:before": {
+                "display": "none"
+              },
+              ".dropdown .dropdown-menu .dropdown-item": {
+                "padding": "0.5em 1.5em 0.5em 1.5em !important",
+                "transition": "none",
+                "margin": "0 !important"
+              }
+            },
+            ".navbar": {
+              "min-height": "77px",
+              "transition": "all 0.3s",
+              "background": "@menuBgColor",
+              "& when (@transparent)": {
+                "background": "none"
+              },
+              "&.opened": {
+                "transition": "all 0.3s"
+              },
+              ".dropdown-item": {
+                "padding": "0.5rem 1.5rem"
+              },
+              ".navbar-collapse": {
+                "justify-content": "flex-end",
+                "z-index": "1",
+                "& when not (@showItems)": {
+                  "display": "none !important"
+                }
+              },
+              "&.collapsed": {
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  },
+                  "@media (min-width: 992px)": {
+                    "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
+                      "max-height": "~'calc(98.5vh - @{logoSize}rem)'"
+                    }
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle='dropdown-submenu']:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "55%"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0.25rem 1.5rem",
+                  "text-align": "center"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-top": "0.5rem",
+                  "padding-bottom": "0.5rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle='dropdown-submenu']:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "55%"
+                  }
+                },
+                ".navbar-logo": {
+                  "img": {
+                    "height": "3.8rem !important"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0.25rem 1.5rem !important",
+                  "text-align": "center"
+                },
+                ".navbar-brand": {
+                  "-webkit-flex-shrink": "initial",
+                  "flex-shrink": "initial",
+                  "-webkit-flex-basis": "auto",
+                  "flex-basis": "auto",
+                  "word-break": "break-word",
+                  "padding-right": "2rem"
+                },
+                ".navbar-toggler": {
+                  "-webkit-flex-basis": "auto",
+                  "flex-basis": "auto"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-top": "0.5rem",
+                  "padding-bottom": "0.5rem"
+                }
+              },
+              "&.navbar-short": {
+                "background": "@menuBgColor !important",
+                "min-height": "60px",
+                ".navbar-logo": {
+                  "img": {
+                    "height": "3rem !important"
+                  }
+                },
+                ".navbar-brand": {
+                  "padding": "0"
+                }
+              }
+            },
+            ".navbar-brand": {
+              "-webkit-flex-shrink": "0",
+              "flex-shrink": "0",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "margin-right": "0",
+              "padding": "0",
+              "transition": "all 0.3s",
+              "word-break": "break-word",
+              "z-index": "1",
+              ".navbar-caption": {
+                "line-height": "inherit !important"
+              },
+              ".navbar-logo a": {
+                "outline": "none"
+              }
+            },
+            ".dropdown-item.active, .dropdown-item:active": {
+              "background-color": "transparent"
+            },
+            ".navbar-expand-lg .navbar-nav .nav-link": {
+              "padding": "0"
+            },
+            ".nav-dropdown .link.dropdown-toggle": {
+              "margin-right": "1.667em",
+              "&[aria-expanded='true']": {
+                "margin-right": "0",
+                "padding": "0.667em 1.667em"
+              }
+            },
+            ".navbar.navbar-expand-lg .dropdown": {
+              ".dropdown-menu": {
+                "background": "@menuBgColor",
+                ".dropdown-submenu": {
+                  "margin": "0",
+                  "left": "100%"
+                }
+              }
+            },
+            ".navbar .dropdown.open > .dropdown-menu": {
+              "display": "block"
+            },
+            "ul.navbar-nav": {
+              "-webkit-flex-wrap": "wrap",
+              "flex-wrap": "wrap"
+            },
+            ".navbar-buttons": {
+              "text-align": "center"
+            },
+            "button.navbar-toggler": {
+              "outline": "none",
+              "width": "31px",
+              "height": "20px",
+              "cursor": "pointer",
+              "transition": "all 0.2s",
+              "position": "relative",
+              "-webkit-align-self": "center",
+              "align-self": "center",
+              ".hamburger span": {
+                "position": "absolute",
+                "right": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all 0.2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all 0.2s"
+                }
+              }
+            },
+            "nav.opened .hamburger span": {
+              "&:nth-child(1)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              },
+              "&:nth-child(2)": {
+                "-webkit-transform": "rotate(45deg)",
+                "transform": "rotate(45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(3)": {
+                "-webkit-transform": "rotate(-45deg)",
+                "transform": "rotate(-45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(4)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              }
+            },
+            ".navbar-dropdown": {
+              "padding": "0.5rem 1rem",
+              "& when (@sticky)": {
+                "position": "fixed"
+              }
+            },
+            "a.nav-link": {
+              "display": "flex",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
+            },
+            ".mbr-iconfont": {
+              "font-size": "1.5rem",
+              "padding-right": "0.5rem"
+            },
+            ".icons-menu": {
+              "-webkit-flex-wrap": "wrap",
+              "flex-wrap": "wrap",
+              "display": "flex",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "padding-left": "1rem",
+              "padding-right": "1rem",
+              "padding-top": "0.3rem",
+              "text-align": "center",
+              "span": {
+                "font-size": "20px",
+                "color": "#ffffff"
+              }
+            },
+            "@media screen and (~'-ms-high-contrast: active'), (~'-ms-high-contrast: none')": {
+              ".navbar": {
+                "height": "77px",
+                "&.opened": {
+                  "height": "auto"
+                }
+              },
+              ".nav-item .nav-link:hover::before": {
+                "width": "175%",
+                "max-width": "calc(100% ~'+' 2rem)",
+                "left": "-1rem"
+              }
+            }
+          },
+          "_name": "menu1",
+          "_sourceTheme": "dinerm4",
+          "_customHTML": "<section class=\"menu menu1 dinerm4_menu1\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header condition=\"showLogo || showIcons\">Size</header>\n\t\t<input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n\t\t<select title=\"Icons\" name=\"iconsAmount\" condition=\"showIcons\">\n\t\t\t<option value=\"1\" selected>1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t\t<option value=\"4\">4</option>\n\t\t\t<option value=\"5\">5</option>\n\t\t\t<option value=\"6\">6</option>\n\t\t</select>\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n\t\t<input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\" checked>\n\t\t<input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n\t\t<input type=\"checkbox\" title=\"Icons\" name=\"showIcons\" checked>\n\t\t<input type=\"checkbox\" title=\"Button(s)\" name=\"showButtons\" checked>\n\t\t<input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n\t\t<input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n\t\t<input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n\t\t<header>Color</header>\n\t\t<input type=\"color\" title=\"Scroll\" name=\"scrollcolor\" value=\"#ffffff\">\n\t\t<input type=\"color\" title=\"Drop Down BG\" name=\"ddbg\" value=\"#ffffff\">\n\t\t<input type=\"color\" title=\"Drop Items\" name=\"dditem\" value=\"#000000\">\n\t\t<input type=\"color\" title=\"Hamburger\" name=\"hamburgerColor\" value=\"#ffffff\">\n\t\t<input type=\"color\" title=\"Background\" name=\"menuBgColor\" value=\"#e7272d\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<nav class=\"navbar navbar-dropdown\" mbr-class=\"{'navbar-fixed-top':sticky,\n                     'navbar-expand-lg':!collapsed,\n\t\t\t\t\t 'collapsed':collapsed}\">\n\n\t\t<div class=\"container\">\n\t\t\t<div class=\"navbar-brand\">\n\t\t\t\t<span mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<a href=\"https://mobiri.se\">\n\t\t\t\t\t\t<img src=\"../_images/logo2.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\">\n\t\t\t\t\t</a>\n\t\t\t\t</span>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-5\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption mbr-light text-white\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t\tDinerM4</a></span>\n\t\t\t</div>\n\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t</button>\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-white\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t\t\tHOME</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item dropdown\">\n\t\t\t\t\t\t<a class=\"nav-link link dropdown-toggle text-white\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"true\" data-toggle=\"dropdown-submenu\">\n\t\t\t\t\t\t\tMENU</a>\n\t\t\t\t\t\t<div class=\"dropdown-menu\">\n\t\t\t\t\t\t\t<a class=\"dropdown-item text-white\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Sushi</a><a class=\"text-white dropdown-item\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Pizza</a><a class=\"text-white dropdown-item\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Thai Food</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-white\" href=\"https://mobiri.se\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">CONTACT US</a>\n\t\t\t\t\t</li></ul>\n\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-white\" href=\"https://www.just-eat.co.uk/\" data-app-placeholder=\"Type Text\"> ONLINE\n\t\t\t\t\t\tORDER</a></div>\n\t\t\t\t<div class=\"icons-menu\" mbr-if=\"showIcons\">\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont mobi-mbri-cart-full mobi-mbri\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont socicon-instagram socicon\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont socicon-vimeo socicon\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont mbri-info\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 4\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont mbri-info\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 5\">\n\t\t\t\t\t\t<span mbr-icon class=\"p-2 mbr-iconfont mbri-info\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</nav>\n</section>",
+          "_cid": "swnF2aGViS",
+          "_anchor": "menu1-c",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            ".google-map": {
+              "height": "30rem",
+              "position": "relative",
+              "iframe": {
+                "height": "100%",
+                "width": "100%"
+              },
+              "[data-state-details]": {
+                "color": "#6b6763",
+                "font-family": "Montserrat",
+                "height": "1.5em",
+                "margin-top": "-0.75em",
+                "padding-left": "1.25rem",
+                "padding-right": "1.25rem",
+                "position": "absolute",
+                "text-align": "center",
+                "top": "50%",
+                "width": "100%"
+              },
+              "&[data-state]": {
+                "background": "#e9e5dc"
+              },
+              "&[data-state='loading']": {
+                "[data-state-details]": {
+                  "display": "none"
+                },
+                "&::after": {}
+              }
+            }
+          },
+          "_name": "map01",
+          "_sourceTheme": "dinerm4",
+          "_customHTML": "<section class=\"map1 dinerm4_map01\" group=\"Maps\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"map\" title=\"Map\" name=\"googleMap\" place-id=\"Domino's Pizza - Belfast - Saintfield Road, 226, 228 Knock Rd, Belfast BT5 6QD\" value=\"Domino's Pizza - Belfast - Saintfield Road, 226, 228 Knock Rd, Belfast BT5 6QD\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"google-map\" mbr-map=\"googleMap\">\n\t</div>\n</section>",
+          "_cid": "swnGsjRvwd",
+          "_anchor": "map01-d",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            ".mbr-overlay": {
+              "background-color": "@overlayColor",
+              "opacity": "@overlayOpacity"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "input, textarea": {
+              "padding": "0.8rem 1.2rem !important",
+              "border-radius": "0px",
+              "font-size": "1.1rem"
+            },
+            ".form-control:hover, .form-control:focus": {
+              "color": "@formPlaceholder !important"
+            },
+            ".btn-success": {
+              "color": "white !important"
+            },
+            "img": {
+              "width": "90%",
+              "border-radius": "8px"
+            },
+            ".btn": {
+              "border-radius": "30px"
+            },
+            "textarea": {
+              "min-height": "160px !important"
+            },
+            "& when (@customStyle)": {
+              ".form-control, .field-input": {
+                "padding": "0.5rem",
+                "background-color": "@fieldColor !important",
+                "border-color": "@borderColor !important",
+                "color": "@formText !important",
+                "min-height": "4rem",
+                "transition": "0.4s",
+                "box-shadow": "none",
+                "outline": "none",
+                "&:hover, &:focus": {
+                  "background-color": "@fieldHover !important",
+                  "border-color": "@borderHover !important",
+                  "color": "contrast(@fieldHover, #000000, #ffffff, 30%) !important",
+                  "box-shadow": "none",
+                  "outline": "none"
+                }
+              },
+              "input::-webkit-input-placeholder, textarea::-webkit-input-placeholder": {
+                "color": "@formPlaceholder"
+              },
+              "input:-moz-placeholder, textarea:-moz-placeholder": {
+                "color": "@formPlaceholder"
+              },
+              ".jq-selectbox li, .jq-selectbox li": {
+                "background-color": "@fieldColor",
+                "color": "contrast(@fieldColor, #000000, #ffffff, 30%)"
+              },
+              ".jq-selectbox li:hover, .jq-selectbox li.selected": {
+                "background-color": "@fieldHover",
+                "color": "contrast(@fieldHover, #000000, #ffffff, 30%)"
+              },
+              ".jq-selectbox:hover .jq-selectbox__trigger-arrow": {
+                "border-top-color": "@fieldColor !important"
+              },
+              ".jq-selectbox .jq-selectbox__trigger-arrow": {
+                "border-top-color": "@fieldHover !important"
+              }
+            },
+            "H5": {
+              "color": "#000000",
+              "padding-bottom": "1rem",
+              "text-align": "center"
+            },
+            "@media (max-width: 992px)": {
+              "img": {
+                "width": "100%"
+              },
+              ".google-map": {
+                "margin-bottom": "2rem"
+              }
+            },
+            "@media (max-width: 576px)": {
+              ".col-auto": {
+                "width": "100%",
+                "text-align": "center"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#808080",
+              "text-align": "center"
+            }
+          },
+          "_name": "form04",
+          "_sourceTheme": "dinerm4",
+          "_customHTML": "<section class=\"form04 dinerm4_form04\" group=\"Form\" plugins=\"formstyler, datepicker\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\">\n\n\t\t<header>Style</header>\n\t\t<input type=\"checkbox\" name=\"customStyle\" title=\"Custom Style\" checked>\n\t\t<input type=\"color\" name=\"fieldColor\" title=\"Field\" value=\"#ffffff\" condition=\"customStyle\">\n\t\t<input type=\"color\" name=\"fieldHover\" title=\"Field Hover\" value=\"#ffffff\" condition=\"customStyle\">\n\t\t<input type=\"color\" name=\"borderColor\" title=\"Border\" value=\"#c1c1c1\" condition=\"customStyle\">\n\t\t<input type=\"color\" name=\"borderHover\" title=\"Border Hover\" value=\"#c1c1c1\" condition=\"customStyle\">\n\t\t<input type=\"color\" name=\"formText\" title=\"Text\" value=\"#808080\" condition=\"customStyle\">\n\t\t<input type=\"color\" name=\"formPlaceholder\" title=\"Placeholders\" value=\"#808080\" condition=\"customStyle\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\">\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n\t<input type=\"hidden\" name=\"usedRecaptcha\" value=\"false\"></mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"(overlay && bg.type=='image')\"></div>\n\n\t<div class=\"container\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div mbr-form class=\"col-lg-8 my-auto md-pb mbr-form\">\n<!--Formbuilder Form-->\n<form action name=\"Form Name\" method=\"POST\" class=\"mbr-form form-with-styler\">\n<div class=\"form-row\">\n<div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">Thanks for filling out the form!</div>\n<div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">Oops...! some problem!</div>\n</div>\n<div class=\"dragArea form-row\">\n<div class=\"col-lg-12\">\n<h5 mbr-theme-style=\"display-7\" class=\"align-left mbr-bold mbr-fonts-style\">Contact Us</h5>\n</div>\n<div class=\"col-lg-12\">\n<p mbr-theme-style=\"display-4\" mbr-if=\"showText\" class=\"mbr-text align-left pb-3 mbr-fonts-style\"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper neque dapibus ipsum semper, sit amet luctus turpis porttitor. Ut libero varius quis ligula, aliquet consectetur tortor.&amp;lt;br&amp;gt; </p>\n</div>\n<div data-for=\"Name\" class=\"col-lg-6 col-md-12 col-sm-12 form-group\">\n<input type=\"text\" name=\"Name\" placeholder=\"Name\" data-form-field=\"Name\" mbr-theme-style=\"display-7\" class=\"form-control\" required=\"required\" value>\n</div>\n<div data-for=\"Email\" class=\"col-lg-6 col-md-12 col-sm-12 form-group\">\n<input type=\"email\" name=\"Email\" placeholder=\"Email\" data-form-field=\"Email\" mbr-theme-style=\"display-7\" class=\"form-control\" required=\"required\" value>\n</div>\n<div data-for=\"Phone\" class=\"col-lg-12 col-md-12 col-sm-12 form-group\">\n<input type=\"tel\" name=\"Phone\" placeholder=\"Phone Number\" data-form-field=\"Phone\" mbr-theme-style=\"display-7\" class=\"form-control\" required=\"required\" value>\n</div>\n<div data-for=\"Message\" class=\"col-lg-12 col-md-12 col-sm-12 form-group\">\n<textarea name=\"Message\" placeholder=\"Your Message\" data-form-field=\"Message\" mbr-theme-style=\"display-7\" class=\"form-control\" required=\"required\"></textarea>\n</div>\n<div mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrBtnAdd\" class=\"col-lg-12 col-md-12 col-sm-12 pt-4\">\n<a data-toolbar=\"-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrBtnAdd\" type=\"submit\" class=\"btn btn-primary\">SEND MESSAGE</a>\n</div>\n</div>\n</form><!--Formbuilder Form-->\n</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "swnGC0Ixgc",
+          "_anchor": "form04-g",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
